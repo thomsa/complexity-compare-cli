@@ -10,6 +10,33 @@
 
 ---
 
+## 🧠 Complexity Metrics
+
+This project uses two types of complexity metrics:
+
+### 🔁 Cyclomatic Complexity
+
+- Measures the number of independent execution paths.
+- Focuses on **control flow**: branches, loops, conditionals.
+- Useful for identifying how many tests are needed.
+
+### 🧠 Cognitive Complexity
+
+- Measures how difficult the code is to **read and understand**.
+- Penalizes **deep nesting**, recursion, and confusing logic.
+- Ignores sequential code, rewarding clean and readable structure.
+
+| Metric           | Cyclomatic Complexity | Cognitive Complexity        |
+| ---------------- | --------------------- | --------------------------- |
+| Focus            | Execution paths       | Readability / mental effort |
+| Nesting          | Not considered        | Penalized                   |
+| Sequential logic | Counted               | Ignored                     |
+| Goal             | Test coverage         | Code clarity                |
+
+> ✅ Use both to improve maintainability and testability.
+
+---
+
 ## Features
 
 - **Commits or Branches**: Compare two commit hashes or your current branch vs. another branch (default: `main`).
