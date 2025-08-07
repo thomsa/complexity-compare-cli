@@ -1,0 +1,45 @@
+{
+  "name": "complexity-compare-cli",
+  "version": "1.0.0",
+  "description": "A CLI tool to compare cyclomatic and cognitive complexity between two Git references in JavaScript/TypeScript projects",
+  "type": "module",
+  "main": "src/index.js",
+  "bin": {
+    "complexity-compare": "./src/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "complexity",
+    "cli",
+    "git",
+    "cognitive-complexity",
+    "cyclomatic-complexity"
+  ],
+  "author": "Tamas Lorincz",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thomsa/complexity-compare-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/thomsa/complexity-compare-cli/issues"
+  },
+  "homepage": "https://github.com/thomsa/complexity-compare-cli#readme",
+  "dependencies": {
+    "chalk": "^5.5.0",
+    "cli-table3": "^0.6.5",
+    "cognitive-complexity-ts": "^0.6.5",
+    "inquirer": "^12.9.0",
+    "ora": "^8.2.0",
+    "simple-git": "^3.28.0",
+    "typhonjs-escomplex": "^0.1.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.28.0",
+    "@babel/preset-env": "^7.28.0",
+    "@babel/preset-react": "^7.27.1",
+    "@babel/preset-typescript": "^7.27.1"
+  }
+}
